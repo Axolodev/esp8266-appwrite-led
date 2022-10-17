@@ -1,0 +1,15 @@
+{
+  "name": "esp8266-appwrite-led",
+  "version": "1.0.0",
+  "description": "showcase on how to use appwrite with an esp8266",
+  "main": "index.js",
+  "repository": "git@github.com:RobRuizR/esp8266-appwrite-led.git",
+  "author": "robruizr",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
