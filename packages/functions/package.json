@@ -1,8 +1,0 @@
-{
-  "name": "functions",
-  "version": "1.0.0",
-  "dependencies": {
-    "appwrite": "^10.1.0",
-    "dotenv": "^16.0.3"
-  }
-}
