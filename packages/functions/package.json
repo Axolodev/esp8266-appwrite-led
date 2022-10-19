@@ -1,0 +1,16 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/getColor.js",
+    "deploy": "appwrite functions createDeployment --functionId=<Your-Function-Id> --activate=true --entrypoint='src/getColor.js' --code='.'"
+  },
+  "main": "src/getColor.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-appwrite": "^8.1.0"
+  },
+  "devDependencies": {
+    "appwrite-cli": "^1.1.1"
+  }
+}

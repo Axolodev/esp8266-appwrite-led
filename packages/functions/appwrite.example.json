@@ -1,0 +1,49 @@
+{
+  "projectId": "<ProjectId>",
+  "projectName": "esp8266-led",
+  "collections": [
+    {
+      "$id": "<CollectionId>",
+      "$createdAt": "2022-10-17T22:16:26.354+00:00",
+      "$updatedAt": "2022-10-17T22:20:57.670+00:00",
+      "$permissions": ["read(\"any\")", "update(\"any\")"],
+      "databaseId": "<DatabaseId>",
+      "name": "color",
+      "enabled": true,
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "red",
+          "type": "integer",
+          "status": "available",
+          "required": true,
+          "array": false,
+          "min": 0,
+          "max": 255,
+          "default": null
+        },
+        {
+          "key": "green",
+          "type": "integer",
+          "status": "available",
+          "required": true,
+          "array": false,
+          "min": 0,
+          "max": 255,
+          "default": null
+        },
+        {
+          "key": "blue",
+          "type": "integer",
+          "status": "available",
+          "required": true,
+          "array": false,
+          "min": 0,
+          "max": 255,
+          "default": null
+        }
+      ],
+      "indexes": []
+    }
+  ]
+}
