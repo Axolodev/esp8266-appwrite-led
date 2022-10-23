@@ -1,8 +1,8 @@
 # ESP8266 Appwrite
 
-(Documentación disponible en español)[/readme.es.md]
+[Documentación disponible en español](/readme.es.md)
 
-Project created for Hacktoberfest 2022 to showcase how to use an Arduino (specifically an ESP8266) to retrieve data from an Appwrite Server. It includes an (app that you can use to set the color)[https://arduino-appwrite.axolodev.me/].
+Project created for Hacktoberfest 2022 to showcase how to use an Arduino (specifically an ESP8266) to retrieve data from an Appwrite Server. It includes an [app that you can use to set the color](https://arduino-appwrite.axolodev.me/).
 
 ## Table of contents
 
