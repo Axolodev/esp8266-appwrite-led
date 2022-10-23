@@ -4,11 +4,11 @@ const sdk = require("node-appwrite");
 const client = new sdk.Client();
 
 const requiredEnvVars = [
-  "APPWRITE_FUNCTION_ENDPOINT",
+  "APPWRITE_HOSTNAME",
   "APPWRITE_FUNCTION_PROJECT_ID",
-  "APPWRITE_FUNCTION_API_KEY",
-  "DATABASE_ID",
-  "COLLECTION_ID",
+  "APPWRITE_APIKEY",
+  "APPWRITE_DATABASE_ID",
+  "APPWRITE_COLLECTION_ID",
 ];
 
 module.exports = async (req, res) => {
@@ -29,14 +29,14 @@ module.exports = async (req, res) => {
   }
 
   client
-    .setEndpoint(req.variables["APPWRITE_FUNCTION_ENDPOINT"])
+    .setEndpoint(req.variables["APPWRITE_HOSTNAME"])
     .setProject(req.variables["APPWRITE_FUNCTION_PROJECT_ID"])
-    .setKey(req.variables["APPWRITE_FUNCTION_API_KEY"]);
+    .setKey(req.variables["APPWRITE_APIKEY"]);
 
   const database = new sdk.Databases(client);
 
-  const databaseId = req.variables["DATABASE_ID"];
-  const collectionId = req.variables["COLLECTION_ID"];
+  const databaseId = req.variables["APPWRITE_DATABASE_ID"];
+  const collectionId = req.variables["APPWRITE_COLLECTION_ID"];
 
   database
     .listDocuments(databaseId, collectionId)
